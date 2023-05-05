@@ -4,4 +4,4 @@
 
 但是，加入多头注意力层后，pytorch的模型性能较原模型性能差很多，目前考虑是mha实现机制的问题。
 
-将本代码放置在[原项目](https://github.com/ChangdeDu/BraVL) 根目录下就可运行。
+将本代码放置在[原项目](https://github.com/Altaheri/EEG-ATCNet) 根目录下就可运行。
