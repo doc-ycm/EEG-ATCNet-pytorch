@@ -167,8 +167,8 @@ class conv_block(nn.Module):
                 nn.BatchNorm2d(16),
                 # problem,
             )
-        self.depthwise = nn.Conv2d(16, 16, (22,1), stride=1, padding=0, dilation=1, groups=16, bias=False)
-        self.pointwise = nn.Conv2d(16, 16*2, 1, 1, 0, 1, 1, bias=False)
+        self.depthwise = nn.Conv2d(16, 16*2, (22,1), stride=1, padding=0, dilation=1, groups=16, bias=False)
+        self.pointwise = nn.Conv2d(16*2, 16*2, 1, 1, 0, 1, 1, bias=False)
         self.conv_block_2 = nn.Sequential(
                 nn.BatchNorm2d(32),
                 nn.ELU(),
